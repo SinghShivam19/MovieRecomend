@@ -3,8 +3,8 @@ import pickle
 import pandas as pd
 import requests
 st.title('Movie Recommende System')
-movie_list=pickle.load(open('MovieRecomend/movie_list.pkl','rb'))
-similarity=pickle.load(open('MovieRecomend/similarity.pkl','rb'))
+movie_list=pickle.load(open('movie3/movie_list.pkl','rb'))
+similarity=pickle.load(open('movie3/similarity.pkl','rb'))
 movies = pd.DataFrame(movie_list)
 
 def fetch_poster(movie_id):
